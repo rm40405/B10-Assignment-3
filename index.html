@@ -23,44 +23,116 @@
       src="https://kit.fontawesome.com/5960bac3ab.js"
       crossorigin="anonymous"
     ></script>
+    <!-- uyiyiyooo -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              greens: "#ABEF5F",
+              blacks: "#212121",
+            },
+          },
+        },
+      };
+    </script>
     <!-- style css -->
     <style>
       .manrope {
         font-family: "Manrope", sans-serif;
       }
+      .rt {
+        background: linear-gradient(
+          45deg,
+          rgb(255, 255, 255),
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
     </style>
   </head>
   <body class="manrope">
     <!-- header section -->
-    <header class="container mx-auto px-8">
+    <header class="container mx-auto px-8 rt">
       <!-- navbar section -->
-      <nav>
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <i
-              class="fa-solid fa-arrow-right px-1 py-1 mx-1 bg-[#ABEF5F] rounded-full -rotate-45"
+
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+          </div>
+          <i
+            class="fa-solid fa-arrow-right bg-greens rounded-full px-1 py-1 -rotate-45"
+          ></i>
+          <a class="btn btn-ghost text-3xl font-extrabold text-black"
+            >Rinterio</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="hover:font-bold text-lg"><a>Home</a></li>
+            <li class="hover:font-bold text-lg"><a>Services</a></li>
+            <li class="hover:font-bold text-lg"><a>portfolio</a></li>
+            <li class="hover:font-bold text-lg"><a>Blogs</a></li>
+            <li class="hover:font-bold text-lg"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-4">
+          <i
+            class="fa-solid fa-magnifying-glass px-2 py-2 bg-[#f3f0f0] rounded-full"
+          ></i>
+          <i
+            class="fa-solid fa-cart-shopping px-2 py-2 bg-[#f3f0f0] rounded-full"
+          ></i>
+          <a class="btn bg-greens text-lg font-bold rounded-3xl"
+            >Book Consult<i
+              class="fa-solid fa-arrow-right bg-black text-lg rounded-full px-2 -rotate-45 text-white"
             ></i>
-            <a class="text-3xl font-bold text-black">Rinterio</a>
+          </a>
+        </div>
+      </div>
+      <!-- banner section -->
+      <div class="hero min-h-screen">
+        <div class="text-center">
+          <div class="flex justify-center items-center w-full">
+            <img src="./assets/banner.png" alt="" />
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li class="hover:font-bold"><a>Home</a></li>
-              <li class="hover:font-bold"><a>Services</a></li>
-              <li class="hover:font-bold"><a>Portfolio</a></li>
-              <li class="hover:font-bold"><a>Blog</a></li>
-              <li class="hover:font-bold"><a>Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <a class="btn font-bold text-lg bg-[#ABEF5F] rounded-3xl"
-              >Book Consult
-              <i
-                class="fa-solid fa-arrow-right px-1 py-1 mx-1 bg-black text-white rounded-full -rotate-45"
-              ></i
-            ></a>
+          <div class="w-11/12 text-center lg:ml-12 py-5">
+            <h1 class="text-5xl font-extrabold text-center">
+              A barn house of this design has a <br />
+              striking appearance
+            </h1>
+            <p class="py-6 text-sm">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              <br />accents, and large windows that flood the space with natural
+              light.
+            </p>
+            <button>
+              <a class="btn bg-greens text-lg font-bold rounded-3xl opacity-50"
+                >View Ditails<i
+                  class="fa-solid fa-arrow-right bg-green-300 text-lg rounded-full px-1 -rotate-45"
+                ></i>
+              </a>
+            </button>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
     <!-- main section -->
     <main></main>
